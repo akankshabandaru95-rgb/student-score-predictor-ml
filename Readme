@@ -1,0 +1,55 @@
+# Student Score Predictor 🎓
+
+A Machine Learning project that predicts a student's final exam score from their study habits. Built as the final project of the AI & Python internship at Codomax Digital.
+
+## Problem Statement
+Can we estimate a student's exam performance from hours studied, attendance, previous score and sleep? This project builds and compares ML models to answer that.
+
+## Features
+- Generates a dataset of 300 students (synthetic, so no downloads needed)
+- Trains and compares **Linear Regression** and **Random Forest**
+- Evaluates models with MAE and R² score
+- Saves an Actual vs Predicted chart
+- Interactive prediction with input validation
+
+## Tech Stack
+Python 3 · Pandas · NumPy · Scikit-learn · Matplotlib
+
+## How to Run
+```bash
+pip install -r requirements.txt
+python student_score_predictor.py
+```
+
+## Results
+| Model | MAE | R² |
+|---|---|---|
+| Linear Regression | 2.97 | 0.913 |
+| Random Forest | 3.93 | 0.855 |
+
+Linear Regression performed best (average error of about 3 marks). This is expected, because the synthetic data has linear relationships; results on real data may differ.
+
+## Example
+```
+Hours studied per day (0-12): 6
+Attendance % (0-100): 85
+Previous exam score (0-100): 70
+Sleep hours per day (0-12): 7
+
+Predicted final score: 69.4 / 100
+```
+
+## Limitations
+- The dataset is synthetic, not real student data
+- Predictions are estimates, not guarantees
+
+## Future Improvements
+- Train on a real student dataset
+- Build a web interface with Streamlit
+- Add more features, such as assignment marks
+
+## AI Tools Used
+AI assistants (such as Claude) were used to plan the project and debug code. I reviewed and tested the code myself.
+
+## Author
+Akanksha Bandaru
